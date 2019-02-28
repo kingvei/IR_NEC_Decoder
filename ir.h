@@ -16,12 +16,12 @@
  * rejestru capture (TIMx_CCRy).
  * Dla odebranego pakietu danych wywołuje ir_callback
  */
-extern void ir_capture(uint16_t pulse);
+extern void ir_decode(uint16_t pulse);
 
 /*
  * Funkcja wołana w przerwaniu od przepełnienia licznika
  */
-extern void ir_ovf(void);
+extern void ir_reset(void);
 
 
 /*
